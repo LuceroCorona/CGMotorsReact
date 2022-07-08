@@ -1,4 +1,5 @@
-import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo.png";
+import CartWidget from "./CartWidget";
 
 const NavBar=() => {
     return (
@@ -8,7 +9,7 @@ const NavBar=() => {
        style={{width:100}}
        src={logo}/>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Comiendo Pasto</a>
+          <a className="navbar-brand" href="#">Simple Makeup</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -32,6 +33,7 @@ const NavBar=() => {
               </li>
 
             </ul>
+            <CartWidget/>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <button className="btn btn-outline-success" type="submit">Search</button>
